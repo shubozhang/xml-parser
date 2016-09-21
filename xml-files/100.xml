@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<personList>
+    <list>
+        <id>A1</id>
+        <name>A1</name>
+    </list>
+    <list>
+        <id>A2</id>
+        <name>A2</name>
+    </list>
+</personList>
