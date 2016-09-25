@@ -1,4 +1,4 @@
-package jaxb.XMLgenerator;
+package jaxb.xmlwriter;
 
 
 import jaxb.entity.Person;
@@ -9,7 +9,7 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import java.io.File;
 
-public class App {
+public class XMLwriter {
 
     public static void main(String[] args) {
         Person p1 = new Person("A1", "A1");
@@ -21,7 +21,7 @@ public class App {
 
         try {
 
-            File file = new File("xml-files/100.xml");
+            File file = new File("files/100.xml");
             JAXBContext jaxbContext = JAXBContext.newInstance(PersonList.class);
             Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
 

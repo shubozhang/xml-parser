@@ -22,7 +22,7 @@ public class PersonList {
         return list;
     }
 
-    @XmlElement
+    @XmlElement(name = "Person")
     public void setList(ArrayList<Person> list) {
         this.list = list;
     }
