@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<personList>
+<personList xml:space="preserve">
     <Person>
         <id>A1</id>
-        <name>A1</name>
+        <name>A1            name</name>
     </Person>
     <Person>
         <id>A2</id>
-        <name>A2</name>
+        <name>A2                name</name>
     </Person>
 </personList>
