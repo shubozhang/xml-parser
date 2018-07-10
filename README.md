@@ -22,10 +22,11 @@ Crimson
 
 1 - How do I make JAXB go faster?
 You are on the right track with unmarshalling from a StAX input, but I would recommend a XMLStreamReader instead of a XMLEventReader.
-
+```java
 XMLInputFactory xmlif = XMLInputFactory.newInstance();
 XMLStreamReader xmler = xmlif.createXMLStreamReader(fr);
 Since StAX is a standard you can switch in another implementation such as WoodStox as the underlying parser.
+```
 
 2 - How can I be 100% sure what underlying parsing mechanism it is using?
 Just like you are doing. If you pass a JAXB implementation an instance of XMLStreamReader then you can be reasonably sure that it is being used. 
